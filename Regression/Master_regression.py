@@ -57,12 +57,7 @@ for i in range(no_patients):
                  np.append(derivative, weight_values[k+1]-bmi_values[k])
 
                 X.append(derivative)
-
                 SSPG_difference = SSPG_values[k + 1] - SSPG_values[k]
-                if SSPG_difference > 0:
-                    labels.append(1)
-                else:
-                    labels.append(2)
                 Y.append(SSPG_difference)
 
 
